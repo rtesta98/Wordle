@@ -1,0 +1,63 @@
+body {
+	background-color: powderblue;
+}
+
+#game {
+    border: red 3px;
+    height: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#board-container {
+    display: flex;
+}
+
+h1 {
+    text-align:center;
+
+}
+#board {
+    display: grid;
+    margin:auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+.square {
+    color: red;
+    border: 2px solid;
+    border-radius: 4px;
+    min-width: 70px;
+    min-height: 70px;
+    font-size: 45px;
+    /*display: flex;*/
+}
+
+#keyboard-container {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.square:hover {
+    background-color: darkred;
+}
+
+.keyboard-row {
+  margin-top: 5px;
+  display: flex;
+  width: 100%;
+}
+
+.keyboard-row button {
+	background-color: white;
+	border-radius: 10px;
+	margin-right: 5px;
+  flex-grow: 100;
+	height:30px;
+	color: blue;
+}
+
